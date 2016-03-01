@@ -1,7 +1,7 @@
 <div class="container">
 
-  {{#if model.categories}}
-    {{#each model.categories as |category|}}
+  {{#if model}}
+    {{#each model as |category|}}
       <div class="row well">
         <div class="col-md-12">
           {{#link-to 'category' category.id }}{{category.name}}{{/link-to}}
@@ -11,5 +11,5 @@
 
   {{else}}<!-- Add a category -->
   {{/if}}
-  {{new-cat model=model.categories saveCat="saveCat"}}
+  {{new-cat model=model saveCat="saveCat"}}
 </div>
