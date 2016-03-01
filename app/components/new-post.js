@@ -17,7 +17,8 @@ export default Ember.Component.extend({
         price: this.get('price') || null,
         subcategory: this.get('subcategory') || null,
         title: this.get('title') || null,
-        timestamp: this.get('timestamp') || null
+        timestamp: Date.now()
+        //timestamp: this.get(Date.now()) || null
       };
       console.log(params);
       this.set('showPostForm', false);

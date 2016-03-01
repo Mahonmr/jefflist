@@ -1,9 +1,5 @@
+<h2>{{model.name}}</h2>
+
+{{post-tile posts=model.posts }}
+
 {{new-post category=model submitPost="savePost"}}
-{{model.name}}
-{{#each model.posts as |post|}}
-
-      {{!-- {{#link-to 'post' post.id }} --}}
-      {{post.author}}
-      {{!-- {{/link-to}} --}}
-
-{{/each}}
