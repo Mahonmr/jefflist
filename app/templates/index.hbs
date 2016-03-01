@@ -1,0 +1,15 @@
+<div class="container">
+
+  {{#if model.categories}}
+    {{#each model.categories as |category|}}
+      <div class="row well">
+        <div class="col-md-12">
+          {{#link-to 'category' category.id }}{{category.name}}{{/link-to}}
+        </div>
+      </div>
+    {{/each}}
+
+  {{else}}<!-- Add a category -->
+  {{/if}}
+  {{new-cat model=model.categories saveCat="saveCat"}}
+</div>

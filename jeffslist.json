@@ -1,0 +1,28 @@
+{
+  "categories" : {
+    "for_sale" : {
+      "posts" : "hasMany"
+    },
+    "events" : {
+      "posts" : "hasMany"
+    },
+    "jobs" : {
+      "posts" : "hasMany"
+    },
+    "housing" : {
+      "posts" : "hasMany"
+    }
+  },
+  "posts" : {
+    "0" : {
+      "category": "",
+      "author": "",
+      "content": "",
+      "location": "",
+      "price": "",
+      "subcategory": "",
+      "title": "",
+      "timestamp": ""
+    }
+  }
+}
